@@ -108,47 +108,115 @@
       <div class="main__carousel-inner carousel-inner">
         <div class="main__carousel-item carousel-item active" data-bs-interval="4000">
           <img src="./images/the-chosen-4.jpeg" alt="Imagem da série The chosen" class="main__carousel-img">
-          <button class="main__carousel-button">
+          <button class="main__carousel-button" data-bs-toggle="modal" data-bs-target="#modal">
             <img src="./images/play.svg" alt="" class="play">
             <span>Trailer</span>
           </button>
         </div>
         <div class="carousel-item" data-bs-interval="4000">
           <img src="./images/harry-potter_pedra.jpg" alt="Imagem do filme Harry Potter e a pedra filosofal" class="main__carousel-img">
-          <button class="main__carousel-button">
+          <button class="main__carousel-button" data-bs-toggle="modal" data-bs-target="#modal-harry">
             <img src="./images/play.svg" alt="" class="play">
             <span>Trailer</span>
           </button>
         </div>
         <div class="carousel-item" data-bs-interval="4000">
           <img src="./images/la-casa.png" alt="Imagem da série La Casa de Papel" class="main__carousel-img">
-          <button class="main__carousel-button">
+          <button class="main__carousel-button" data-bs-toggle="modal" data-bs-target="#modal-casaPapel">
             <img src="./images/play.svg" alt="" class="play">
             <span>Trailer</span>
           </button>
         </div>
         <div class="carousel-item" data-bs-interval="4000">
           <img src="./images/matrix.webp" alt="Imagem do filme Matrix" class="main__carousel-img">
-          <button class="main__carousel-button">
+          <button class="main__carousel-button" data-bs-toggle="modal" data-bs-target="#modal-matrix">
             <img src="./images/play.svg" alt="" class="play">
             <span>Trailer</span>
           </button>
         </div>
         <div class="carousel-item" data-bs-interval="4000">
           <img src="./images/bad-boys.webp" alt="Imagem do filme Bad Boys 4" class="main__carousel-img">
-          <button class="main__carousel-button">
+          <button class="main__carousel-button" data-bs-toggle="modal" data-bs-target="#modal-badBoys">
             <img src="./images/play.svg" alt="" class="play">
             <span>Trailer</span>
           </button>
         </div>
       </div>
     </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Trailer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <video id="videoPlayer" src="./videos/The Chosen 4ª Temporada  TRAILER OFICIAL LEGENDADO.mp4" controls width="100%" height="100%"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-harry">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Trailer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <video id="videoPlayerHarry" src="./videos/Harry Potter e a Pedra Filosofal (2001)  Trailer [Legendado].mp4" controls width="100%" height="100%"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-casaPapel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Trailer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <video id="videoPlayerCasaDePapel" src="./videos/La Casa de Papel  Trailer oficial  Netflix Brasil.mp4" controls width="100%" height="100%"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-matrix">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Trailer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <video id="videoPlayerMatrix" src="./videos/Matrix Resurrections  Trailer 2 Legendado.webm" controls width="100%" height="100%"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal" id="modal-badBoys">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Trailer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <video id="videoPlayerBadBoys" src="./videos/Bad Boys Até O Fim  Trailer Oficial Legendado [1].mp4" controls width="100%" height="100%"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 
-  <audio src="" autoplay loop>
-    <source src="">
-  </audio>
-
   <script src="./lib/bootstrap.bundle.min.js"></script>
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
